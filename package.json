@@ -1,5 +1,5 @@
 {
-  "name": "@node-s3-client/s3",
+  "name": "@faceleg/s3",
   "version": "4.4.2",
   "description": "high level amazon s3 client. upload and download files and directories",
   "main": "lib/index.js",
