@@ -455,6 +455,7 @@ And these events:
    uploading.
  * `'fileUploadEnd' (localFilePath, s3Key)` - emitted when a file successfully
    finishes uploading.
+ * `'filesDeleted' ([s3Key])` - emitted when files are deleted from S3
 
 `uploadDir` works like this:
 
