@@ -341,6 +341,7 @@ describe("s3", function () {
   });
 
   it("uploadDir with deleteRemoved", function(done) {
+    var filesDeleted = false;
     var client = createClient();
     var params = {
       localDir: path.join(__dirname, "dir2"),
@@ -351,7 +352,11 @@ describe("s3", function () {
       },
     };
     var uploader = client.uploadDir(params);
+    uploader.on('filesDeleted', function(items) {
+      filesDeleted = true;
+    });
     uploader.on('end', function() {
+      assert(filesDeleted, "expected filesDeleted event to be triggered");
       done();
     });
   });
