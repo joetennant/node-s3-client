@@ -1,8 +1,14 @@
+# DO NOT USE
+
+This fork is intended to solve a particular problem of mine. The changes here are a combination of a couple other forks of the original `node-s3-client` library. This fork is the merge of at least one PR and the main branch of a different fork. Neither of which exist in the same place.
+
+----
+
 # High Level Amazon S3 Client
 
 ## Installation
 
-`npm install s3 --save`
+`npm install @joetennant/s3 --save`
 
 ## Features
 
