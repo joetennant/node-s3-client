@@ -1,7 +1,7 @@
 {
-  "name": "@faceleg/s3",
+  "name": "@joetennant/s3",
   "version": "4.5.0",
-  "description": "high level amazon s3 client. upload and download files and directories",
+  "description": "high level amazon s3 client. upload and download files and directories. Originally merged from jeremyfaither and faceleg forks.",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
